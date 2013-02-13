@@ -1,0 +1,25 @@
+/**
+ * Basic styling for jQuery pairs plugin.
+**/
+
+.card {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;  
+}
+
+.card > .symbol {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+}
+
+.card.selected > .symbol {
+    opacity: 1;
+    -webkit-transition: opacity 0.5s;
+}
+
+.card.removed {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+}
